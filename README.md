@@ -1,6 +1,7 @@
-# 💊 Hospital Management
+# 💊 Hospital Management System
 
-**A Fullstack Hospital Management Website for Doctors and Patients**  
+**A Fullstack Hospital Management Website for Doctors and Patients**
+
 Hospital Management is a user-friendly platform designed to simplify hospital interactions. Patients can register, book appointments, and manage medical records, while doctors can view appointments and medical histories — all from a unified interface.
 
 ---
@@ -8,85 +9,78 @@ Hospital Management is a user-friendly platform designed to simplify hospital in
 ## 🚀 Features
 
 ### 🔐 Authentication
-
-- **Login/Register** system for both Patients and Doctors
+- Secure Login/Register system for both Patients and Doctors
+- Doctor accounts require Admin approval before appearing publicly
 
 ### 🏠 Overview Page
-
 - Personalized dashboard displaying:
   - Profile details
   - Editable profile options
-  - statistics
+  - Key statistics
 
 ### 📅 Appointments
-
 - View all scheduled appointments
 - Book new appointments easily
 
 ### 🧑‍⚕️ Doctors Page
-
-- Browse a list of available doctors
+- Browse a directory of approved doctors
 - Book appointments directly from doctor profiles
 
 ### 📁 Medical Records
-
 - View all past and current medical records
+
+### 🛠️ Admin Panel
+- Approve or reject doctor registrations
+- Manage patients and doctors
+- View platform-wide statistics
 
 ---
 
 ## 🖥️ Tech Stack
 
-- **Frontend:** ReactJS, Tailwind CSS
+- **Frontend:** React, Tailwind CSS, Vite
 - **Backend:** Node.js, Express.js
-- **Database:** MongoDB
+- **Database:** MongoDB (Mongoose)
 - **Authentication:** JWT-based secure auth system
 
 ---
 
-## 📹 Video Demo
+## ⚙️ Getting Started
 
-Watch the full walkthrough here:  
-👉 Demo Video
+### Prerequisites
+- Node.js (v18+)
+- A MongoDB database
 
-[![Hospital Management Demo](https://img.youtube.com/vi/tKiqx73z1Oo/0.jpg)](https://youtu.be/tKiqx73z1Oo)
+### 1. Clone the repository
+```bash
+git clone https://github.com/YOUR_USERNAME/hospital-management.git
+cd hospital-management
+```
 
----
+### 2. Set up the backend
+```bash
+cd server
+npm install
+```
 
-## 🖼️ Screenshots
+Create a `.env` file inside `server/` with:
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+```
 
-### Overview Page
+Start the server:
+```bash
+npm run dev
+```
 
-![Home Page](./assets/overview.png)
+### 3. Set up the frontend
+Open a new terminal:
+```bash
+cd client
+npm install
+npm run dev
+```
 
-### Appointments Page
-
-![Appointments Page](./assets/appointments.png)
-
-### Doctors Page
-
-![Doctors Page](./assets/doctors.png)
-
-### Medical Records Page
-
-![Medical Records Page](./assets/medicalrecord.png)
-
----
-
-## 📝 License
-
-This project is licensed under the **MIT License**.  
-Feel free to use, modify, and distribute for personal and commercial purposes.
-
----
-
-## 🙌 Contribution
-
-Contributions, issues, and feature requests are welcome!  
-Feel free to fork this repo and submit a pull request.
-
----
-
-## 💬 Contact
-
-Created with ❤️ by Sushmitha Shettigar  
-Reach out via [LinkedIn](https://www.linkedin.com/in/sushmithashettigar/) or [GitHub](https://github.com/sushmithashettigar29)
+The app will be available at `http://localhost:5173`.
