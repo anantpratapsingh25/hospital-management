@@ -1,0 +1,107 @@
+@import "tailwindcss";
+/* @plugin "daisyui";
+@plugin "daisyui" {
+  themes: light --default, cmyk;
+} */
+input,
+select,
+textarea {
+  border: 3px solid #bae6fd8c;
+  outline: none;
+  background-color: #f0f9ff;
+}
+.border-cl{
+  border: 3px solid #bae6fd8c;
+}
+.black-color {
+  color: #2b2d42;
+}
+.black-bg {
+  background-color: #2b2d42;
+}
+
+.white-bg {
+  background-color: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.dark-bg {
+  background-color: #0284c7;
+}
+.medium-bg {
+  background-color: #38bdf8;
+}
+.light-bg {
+  background-color: #bae6fd8c;
+}
+
+.white-color {
+  color: #f0f9ff;
+}
+.dark-color {
+  color: #0284c7;
+}
+.medium-color {
+  color: #38bdf8;
+}
+.light-color {
+  color: #7dd3fc47;
+}
+
+.hover-dark-color:hover {
+  color: #0284c7;
+}
+.hover-dark-bg:hover {
+  background-color: #0284c7;
+}
+
+.app-blur-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: #f0f9ff;
+}
+.app-blur-bg::before,
+.app-blur-bg::after {
+  content: "";
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(90px);
+}
+.app-blur-bg::before {
+  width: 480px;
+  height: 480px;
+  top: -120px;
+  left: -100px;
+  background: #7dd3fc;
+  opacity: 0.55;
+}
+.app-blur-bg::after {
+  width: 520px;
+  height: 520px;
+  bottom: -140px;
+  right: -120px;
+  background: #38bdf8;
+  opacity: 0.45;
+}
+
+.none {
+  display: none;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
