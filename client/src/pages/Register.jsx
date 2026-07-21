@@ -29,7 +29,7 @@ const Register = () => {
       };
 
       const response = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://hospital-management-k1xl.onrender.com/api/auth/register",
         userData
       );
 

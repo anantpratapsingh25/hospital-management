@@ -17,7 +17,7 @@ export const EditAppointmentForm = ({ appointment, onSuccess, onCancel }) => {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/appointments/edit/${appointment._id}`,
+        `https://hospital-management-k1xl.onrender.com/api/appointments/edit/${appointment._id}`,
         {
           method: "PUT",
           headers: {

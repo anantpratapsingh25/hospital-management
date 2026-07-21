@@ -49,7 +49,7 @@ const AppointmentsPage = () => {
         endpoint = "/api/appointments/my";
       }
 
-      const response = await fetch(`http://localhost:5000${endpoint}`, {
+      const response = await fetch(`https://hospital-management-k1xl.onrender.com${endpoint}`, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${userToken}`,
@@ -89,7 +89,7 @@ const AppointmentsPage = () => {
     try {
       setLoadingRecords(true);
       const response = await fetch(
-        `http://localhost:5000/api/records/appointment/${appointmentId}`,
+        `https://hospital-management-k1xl.onrender.com/api/records/appointment/${appointmentId}`,
         {
           headers: {
             "Content-Type": "application/json",
@@ -115,7 +115,7 @@ const AppointmentsPage = () => {
 
   const handleStatusChange = async (id, newStatus) => {
     try {
-      const res = await fetch(`http://localhost:5000/api/appointments/${id}`, {
+      const res = await fetch(`https://hospital-management-k1xl.onrender.com/api/appointments/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -139,7 +139,7 @@ const AppointmentsPage = () => {
       return;
 
     try {
-      const res = await fetch(`http://localhost:5000/api/appointments/${id}`, {
+      const res = await fetch(`https://hospital-management-k1xl.onrender.com/api/appointments/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${userToken}`,

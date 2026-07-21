@@ -44,8 +44,8 @@ function DoctorsPage() {
       try {
         const url =
           user?.role === "Admin"
-            ? "http://localhost:5000/api/admin/doctors"
-            : "http://localhost:5000/api/doctors";
+            ? "https://hospital-management-k1xl.onrender.com/api/admin/doctors"
+            : "https://hospital-management-k1xl.onrender.com/api/doctors";
 
         const res = await fetch(url, {
           headers: {
@@ -73,7 +73,7 @@ function DoctorsPage() {
   const handleApprove = async (id) => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/admin/approve-doctor/${id}`,
+        `https://hospital-management-k1xl.onrender.com/api/admin/approve-doctor/${id}`,
         {
           method: "PUT",
           headers: {
@@ -99,7 +99,7 @@ function DoctorsPage() {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/admin/delete-user/${id}`,
+        `https://hospital-management-k1xl.onrender.com/api/admin/delete-user/${id}`,
         {
           method: "DELETE",
           headers: {
@@ -119,7 +119,7 @@ function DoctorsPage() {
   const handleReject = async (id) => {
     try {
       const res = await fetch(
-        `http://localhost:5000/api/admin/reject-doctor/${id}`,
+        `https://hospital-management-k1xl.onrender.com/api/admin/reject-doctor/${id}`,
         {
           method: "PUT",
           headers: {
@@ -169,7 +169,7 @@ function DoctorsPage() {
     setIsSubmitting(true);
 
     try {
-      const res = await fetch("http://localhost:5000/api/appointments", {
+      const res = await fetch("https://hospital-management-k1xl.onrender.com/api/appointments", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -24,7 +24,7 @@ export const MedicalRecordForm = ({
       let response;
       if (record) {
         response = await fetch(
-          `http://localhost:5000/api/records/${record._id}`,
+          `https://hospital-management-k1xl.onrender.com/api/records/${record._id}`,
           {
             method: "PUT",
             headers: {
@@ -35,7 +35,7 @@ export const MedicalRecordForm = ({
           }
         );
       } else {
-        response = await fetch("http://localhost:5000/api/records", {
+        response = await fetch("https://hospital-management-k1xl.onrender.com/api/records", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

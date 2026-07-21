@@ -31,11 +31,11 @@ function Overview() {
       let endpoint = "";
 
       if (user.role === "Patient")
-        endpoint = "http://localhost:5000/api/dashboard/patient";
+        endpoint = "https://hospital-management-k1xl.onrender.com/api/dashboard/patient";
       else if (user.role === "Doctor")
-        endpoint = "http://localhost:5000/api/dashboard/doctor";
+        endpoint = "https://hospital-management-k1xl.onrender.com/api/dashboard/doctor";
       else if (user.role === "Admin")
-        endpoint = "http://localhost:5000/api/dashboard/admin";
+        endpoint = "https://hospital-management-k1xl.onrender.com/api/dashboard/admin";
       else {
         setError("Invalid role or user not logged in.");
         setLoading(false);
@@ -66,7 +66,7 @@ function Overview() {
   const fetchUserProfile = async () => {
     try {
       setLoadingProfile(true);
-      const response = await fetch("http://localhost:5000/api/users/profile", {
+      const response = await fetch("https://hospital-management-k1xl.onrender.com/api/users/profile", {
         headers: {
           Authorization: `Bearer ${user.token}`,
         },

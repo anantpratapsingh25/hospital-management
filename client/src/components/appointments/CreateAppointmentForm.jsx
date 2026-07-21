@@ -17,7 +17,7 @@ export const CreateAppointmentForm = ({ onSuccess, onCancel }) => {
     const fetchDoctors = async () => {
       try {
         setLoadingDoctors(true);
-        const response = await fetch("http://localhost:5000/api/doctors", {
+        const response = await fetch("https://hospital-management-k1xl.onrender.com/api/doctors", {
           headers: {
             "Content-Type": "application/json",
             Authorization: `Bearer ${userToken}`,
@@ -44,7 +44,7 @@ export const CreateAppointmentForm = ({ onSuccess, onCancel }) => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch("http://localhost:5000/api/appointments", {
+      const response = await fetch("https://hospital-management-k1xl.onrender.com/api/appointments", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

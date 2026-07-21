@@ -13,7 +13,7 @@ const Login = () => {
     setError("");
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://hospital-management-k1xl.onrender.com/api/auth/login",
         { email, password }
       );
 

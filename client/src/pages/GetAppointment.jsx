@@ -20,7 +20,7 @@ function GetAppointment() {
   useEffect(() => {
     const fetchDoctors = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/doctors", {
+        const res = await fetch("https://hospital-management-k1xl.onrender.com/api/doctors", {
           headers: {
             Authorization: `Bearer ${userToken}`,
           },
@@ -44,7 +44,7 @@ function GetAppointment() {
     setMessage("")
 
     try {
-      const res = await fetch("http://localhost:5000/api/appointments", {
+      const res = await fetch("https://hospital-management-k1xl.onrender.com/api/appointments", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

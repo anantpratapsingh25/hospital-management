@@ -45,7 +45,7 @@ const MedicalRecordsPage = () => {
             throw new Error("Unknown user role");
         }
 
-        const response = await fetch(`http://localhost:5000${endpoint}`, {
+        const response = await fetch(`https://hospital-management-k1xl.onrender.com${endpoint}`, {
           method: "GET",
           headers: {
             "Content-Type": "application/json",
