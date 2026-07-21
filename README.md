@@ -1,5 +1,9 @@
 # 💊 Hospital Management System
 
+🔗 **Live Demo:** [https://hospital-management-1-dm6g.onrender.com](https://hospital-management-1-dm6g.onrender.com)
+
+> Note: First load may take 30–60 seconds if the server has been idle (free hosting tier).
+
 **A Fullstack Hospital Management Website for Doctors and Patients**
 
 Hospital Management is a user-friendly platform designed to simplify hospital interactions. Patients can register, book appointments, and manage medical records, while doctors can view appointments and medical histories — all from a unified interface.
@@ -42,6 +46,7 @@ Hospital Management is a user-friendly platform designed to simplify hospital in
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB (Mongoose)
 - **Authentication:** JWT-based secure auth system
+- **Deployment:** Render
 
 ---
 
